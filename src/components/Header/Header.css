@@ -1,0 +1,27 @@
+.header img {
+    height: 80px;
+}
+.header {
+    text-align: center;
+}
+.header nav {
+    background-color: black;
+    margin-top: 20px;
+    
+}
+.header .menus {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+.header .menus a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.header .menus a:hover {
+    background-color: lightgray;
+    color: black;
+}

@@ -1,0 +1,22 @@
+.product-box {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0px;
+}
+.product-info {
+    margin-left: 10px;
+}
+.product-info h4 {
+    color: blue;
+    font-weight: 400;
+}
+.product-info .seller, .product-info .stock {
+    font-size: 14px;
+}
+.product-info button {
+    background-color: #f0c14b;
+    border: 1px #a88734 #9c7e31 #846a29;
+    border-radius: 5px;
+    padding: 7px 40px;
+    cursor: pointer;
+}
