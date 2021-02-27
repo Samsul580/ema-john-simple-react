@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import './Shop.css';
 import fakeData from '../../fakeData';
 import Product from '../Product/Product';
+import Card from '../Card/Card';
 const Shop = () => {
     const first10 = fakeData.slice(0, 10);
     const [products, setProducts] = useState(first10);
-    const handleAddProduct = () => {
-        console.log("added")
+    const [card, setCard] = useState([]);
+    const handleAddProduct = (product) => {
+        console.log("added");
+        const newCard = [...card, product];
+        setCard(newCard);
     }
     console.log(first10);
     return (
@@ -17,7 +21,7 @@ const Shop = () => {
                 }
             </div>
             <div className="card-container">
-                <h1>samsul shekh</h1>
+                <Card card={card}></Card>
             </div>
 
         </div>
